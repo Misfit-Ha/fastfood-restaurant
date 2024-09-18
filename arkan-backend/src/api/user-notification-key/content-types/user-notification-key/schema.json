@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_notification_keys",
+  "info": {
+    "singularName": "user-notification-key",
+    "pluralName": "user-notification-keys",
+    "displayName": "UserNotificationKey",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subscription": {
+      "type": "json"
+    },
+    "endpoint": {
+      "type": "string"
+    }
+  }
+}

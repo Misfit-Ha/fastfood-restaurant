@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .orange-left-border {
+    @apply border-l-4 border-orange-500 font-bold text-slate-900;
+  }
+}
+
+/* @font-face {
+  font-family: 'IRANSansMobile';
+  font-style: normal;
+  font-weight: bold;
+  font-display: fallback;
+  src:
+    url('../public/fonts/IRANSansMobile_Bold.ttf'),
+    url('../public/fonts/IRANSansMobile_Bold.ttf') format('truetype'),
+    url('../public/fonts/IRANSansMobile_Bold.ttf') format('svg');
+}
+
+@font-face {
+  font-family: 'IRANSansMobile';
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+  src:
+    url('../public/fonts/IRANSansMobile.ttf'),
+    url('../public/fonts/IRANSansMobile.ttf') format('truetype'),
+    url('../public/fonts/IRANSansMobile.ttf') format('svg');
+}
+
+@font-face {
+  font-family: 'persian-titraj2';
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+  src:
+    url('../public/fonts/persian-titraj2.ttf'),
+    url('../public/fonts/persian-titraj2.ttf') format('truetype'),
+    url('../public/fonts/persian-titraj2.ttf') format('svg');
+}
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*
+html,
+body {
+  font-family: 'IRANSansMobile', sans-serif;
+  line-height: 1.8;
+}
+*/
+a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+p {
+  margin: 10px 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: red;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  font: inherit;
+  font-size: 13px;
+  background: #000;
+  color: #fff !important;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  opacity: 0.8;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon svg {
+  margin-right: 5px;
+}
+
+.clean-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  font-family: inherit;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+.leaflet-container {
+  height: 600px;
+  width: 100%;
+}
+
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
+}
+
+/* Animate spinner rotation */
+.animate-spin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --input-autofill-color-light: #59a34b;
+  --input-autofill-color-dark: #f1f5f9;
+}
+
+.dark {
+  --input-autofill-color: var(--input-autofill-color-dark);
+}
+
+.light {
+  --input-autofill-color: var(--input-autofill-color-light);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--input-autofill-color) !important;
+}
+
+.Toastify__toast-body {
+  font-family: IRANSansMobile;
+}
+
+.leaflet-control-attribution {
+  display: none;
+}
+
+.leaflet-control-zoom-out,
+.leaflet-control-zoom-in {
+  @apply rounded-3xl text-slate-900 dark:bg-slate-700 dark:text-slate-200 !important;
+}
+
+.leaflet-control-zoom.leaflet-bar.leaflet-control {
+  @apply overflow-visible rounded-3xl border-0 !important;
+}
+
+.leaflet-popup-content {
+  @apply text-right font-[IRANSansMobile];
+}
+.leaflet-container {
+  @apply rounded-lg  !important;
+}
+
+.Toastify__toast-theme--dark {
+  @apply bg-slate-950 !important;
+}
+
+.Toastify__toast {
+  @apply rounded-lg  !important;
+}
